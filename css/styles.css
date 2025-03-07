@@ -70,17 +70,17 @@ body {
 
 /* Hero Section */
 .hero {
-    height: 80vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1561758033-7e924f619b47?w=1600&h=900&fit=crop') no-repeat center center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1513104890138-7c749659a591?w=1600&h=900&fit=crop');
     background-size: cover;
+    background-position: center;
+    height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: white;
-    margin-bottom: 2rem;
-    position: relative;
-    overflow: hidden;
+    padding: 0 20px;
+    margin-top: 80px;
 }
 
 .hero::before {
@@ -95,23 +95,20 @@ body {
 }
 
 .hero-content {
-    position: relative;
-    z-index: 1;
-    padding: 2rem;
-    animation: fadeInUp 1s ease-out;
+    max-width: 800px;
+    padding: 20px;
 }
 
-.hero h1 {
-    font-size: 4.5rem;
+.hero-content h1 {
+    font-size: 3.5rem;
     margin-bottom: 1rem;
-    font-weight: 800;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    line-height: 1.2;
 }
 
-.hero p {
-    font-size: 1.8rem;
-    opacity: 0.95;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    line-height: 1.4;
 }
 
 /* Menu Sections */
@@ -382,21 +379,41 @@ body {
     }
 
     .hero {
-        height: 50vh;
+        height: auto;
+        min-height: 50vh;
+        padding: 100px 20px 60px;
+        margin-top: 60px;
     }
 
-    .hero h1 {
+    .hero-content h1 {
         font-size: 2.5rem;
+        margin-bottom: 1rem;
     }
 
-    .hero p {
+    .hero-content p {
         font-size: 1.2rem;
+        margin-bottom: 1.5rem;
     }
 
     .cart {
         width: calc(100% - 2rem);
         bottom: 1rem;
         right: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 80px 15px 40px;
+        margin-top: 50px;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
     }
 }
 
