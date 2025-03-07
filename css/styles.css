@@ -16,6 +16,12 @@
     box-sizing: border-box;
 }
 
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -24,6 +30,8 @@ body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     color: var(--text-color);
+    min-height: 100vh;
+    position: relative;
 }
 
 /* Header */
@@ -153,6 +161,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
+    width: 100%;
 }
 
 .menu-item {
@@ -400,13 +409,15 @@ body {
     }
 
     .menu-section {
-        padding: 4rem 0.5rem;
+        padding: 4rem 0;
+        width: 100vw;
     }
 
     .menu-grid {
         grid-template-columns: 1fr;
-        padding: 0 0.5rem;
+        padding: 0 1rem;
         gap: 1.5rem;
+        width: 100%;
     }
 
     .menu-item {
@@ -420,9 +431,10 @@ body {
     }
 
     .cart {
-        width: calc(100% - 1rem);
-        bottom: 0.5rem;
-        right: 0.5rem;
+        width: 100%;
+        bottom: 0;
+        right: 0;
+        border-radius: 0;
     }
 }
 
@@ -441,7 +453,7 @@ body {
     }
 
     .menu-section {
-        padding: 3rem 0.5rem;
+        padding: 3rem 0;
     }
 
     .menu-section h2 {
@@ -666,4 +678,3 @@ body {
         width: 100%;
     }
 }
-
