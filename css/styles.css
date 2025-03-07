@@ -76,7 +76,7 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1513104890138-7c749659a591?w=1600&h=900&fit=crop');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=1600&h=900&fit=crop');
     background-size: cover;
     background-position: center;
     height: 60vh;
@@ -377,14 +377,10 @@ body {
         gap: 1rem;
         padding: 0.5rem;
         text-align: center;
-        width: 100%;
     }
 
     .logo {
         font-size: 1.5rem;
-        width: 100%;
-        text-align: center;
-        display: block;
         margin: 0 auto;
     }
 
