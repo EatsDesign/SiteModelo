@@ -16,17 +16,15 @@
     box-sizing: border-box;
 }
 
-html, body {
+html {
     width: 100%;
     overflow-x: hidden;
-    position: relative;
-}
-
-html {
     scroll-behavior: smooth;
 }
 
 body {
+    width: 100%;
+    overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     color: var(--text-color);
@@ -410,20 +408,23 @@ body {
 
     .menu-section {
         padding: 4rem 0;
-        width: 100vw;
+        width: 100%;
+        margin: 0;
     }
 
     .menu-grid {
         grid-template-columns: 1fr;
-        padding: 0 1rem;
+        padding: 0;
         gap: 1.5rem;
         width: 100%;
+        margin: 0;
     }
 
     .menu-item {
-        margin: 0 auto;
+        margin: 0;
         max-width: 100%;
         width: 100%;
+        border-radius: 0;
     }
 
     .menu-item-content {
@@ -435,6 +436,7 @@ body {
         bottom: 0;
         right: 0;
         border-radius: 0;
+        margin: 0;
     }
 }
 
@@ -454,6 +456,7 @@ body {
 
     .menu-section {
         padding: 3rem 0;
+        margin: 0;
     }
 
     .menu-section h2 {
